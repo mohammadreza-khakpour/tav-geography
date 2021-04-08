@@ -1,0 +1,22 @@
+`
+
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>netcoreapp3.1</TargetFramework>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Geography.Persistence.EF\Geography.Persistence.EF.csproj" />
+      <ProjectReference Include="..\Geography.Services\Geography.Services.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Autofac.Extensions.DependencyInjection" Version="6.0.0" />
+      <PackageReference Include="Swashbuckle.AspNetCore" Version="5.2.1" />
+      <PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer" Version="4.1.1" />
+      <PackageReference Include="IdentityServer4.AccessTokenValidation" Version="3.0.1" />
+    </ItemGroup>
+
+</Project>
